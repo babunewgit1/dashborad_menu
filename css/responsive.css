@@ -11,6 +11,14 @@ Medium Screen - Others
   .reportbox {
     gap: 1rem;
   }
+
+  .brandsTable table {
+    table-layout: auto;
+  }
+
+  .projecttable table tr td ul {
+    margin-left: -6rem;
+  }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   html {
@@ -26,6 +34,56 @@ Medium Screen - Others
 
   .reportbox {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .toltip #tooltiptext {
+    left: inherit;
+    right: 15rem;
+  }
+
+  .brandsTable {
+    padding: 1.5rem;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  .brandsTable table {
+    table-layout: inherit;
+  }
+
+  .postbackstable table tr th,
+  .postbackstable table tr td {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+  .projecttable {
+    padding: 2rem 1.5rem 3rem 1.5rem;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  #marketsta h2 {
+    font-size: 2rem;
+    font-weight: 600 !important;
+    color: #495057;
+    margin-top: 3rem;
+  }
+
+  .projecttable table {
+    table-layout: inherit;
+  }
+
+  .projecttable table tr th,
+  .projecttable table tr td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .projecttable table tr td ul {
+    margin-left: 0;
   }
 }
 
@@ -96,6 +154,114 @@ Small Screen - Tablate
   .brandtable table tr th,
   .brandtable table tr td {
     font-size: 1.4rem;
+  }
+
+  .toltip #tooltiptext {
+    left: 88%;
+  }
+
+  .toltip #tooltiptext::after {
+    left: -0.7rem;
+    top: 0.9rem;
+    transform: scale(-1);
+  }
+
+  #project {
+    margin-top: 3rem;
+    padding: 0rem 1.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .project-name h2,
+  .brands h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #495057;
+  }
+
+  .brands a {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    transition: all 0.2s ease;
+  }
+
+  .brandsTable {
+    padding: 1.5rem;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  .brandsTable table {
+    table-layout: inherit;
+  }
+
+  .brandsTable table tr th,
+  .brandsTable table tr td {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .brandtip {
+    left: calc(100% + 2rem);
+  }
+
+  .brandtip::after {
+    left: -1rem;
+    transform: scale(-1);
+  }
+
+  .brandtip {
+    width: 14rem;
+    height: 6rem;
+    right: calc(100% + 2rem);
+    top: -1.8rem;
+    display: none;
+  }
+
+  .brandtip img {
+    width: 10rem;
+  }
+
+  .postbackstable {
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  .postbackstable table tr th,
+  .postbackstable table tr td {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .projecttable {
+    padding: 2rem 1.5rem 3rem 1.5rem;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  #marketsta h2 {
+    font-size: 2rem;
+    font-weight: 600 !important;
+    color: #495057;
+    margin-top: 3rem;
+  }
+
+  .projecttable table {
+    table-layout: inherit;
+  }
+
+  .projecttable table tr th,
+  .projecttable table tr td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .projecttable table tr td ul {
+    margin-left: 0;
   }
 }
 
@@ -211,6 +377,114 @@ Small Screen - Mobile
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
+  .toltip #tooltiptext {
+    left: 88%;
+  }
+
+  .toltip #tooltiptext::after {
+    left: -0.7rem;
+    top: 0.9rem;
+    transform: scale(-1);
+  }
+
+  #project {
+    margin-top: 3rem;
+    padding: 0rem 1.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .project-name h2,
+  .brands h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #495057;
+  }
+
+  .brands a {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    transition: all 0.2s ease;
+  }
+
+  .brandsTable {
+    padding: 1.5rem;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  .brandsTable table {
+    table-layout: inherit;
+  }
+
+  .brandsTable table tr th,
+  .brandsTable table tr td {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .brandtip {
+    left: calc(100% + 2rem);
+  }
+
+  .brandtip::after {
+    left: -1rem;
+    transform: scale(-1);
+  }
+
+  .brandtip {
+    width: 14rem;
+    height: 6rem;
+    right: calc(100% + 2rem);
+    top: -1.8rem;
+    display: none;
+  }
+
+  .brandtip img {
+    width: 10rem;
+  }
+
+  .postbackstable {
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  .postbackstable table tr th,
+  .postbackstable table tr td {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .projecttable {
+    padding: 2rem 1.5rem 3rem 1.5rem;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  #marketsta h2 {
+    font-size: 2rem;
+    font-weight: 600 !important;
+    color: #495057;
+    margin-top: 3rem;
+  }
+
+  .projecttable table {
+    table-layout: inherit;
+  }
+
+  .projecttable table tr th,
+  .projecttable table tr td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .projecttable table tr td ul {
+    margin-left: 0;
+  }
 }
 
 /*
@@ -324,5 +598,113 @@ Xtra Small Screen - Small Mobile
 
   .brandtable table tr td span {
     left: 1rem;
+  }
+
+  .toltip #tooltiptext {
+    left: 88%;
+  }
+
+  .toltip #tooltiptext::after {
+    left: -0.7rem;
+    top: 0.9rem;
+    transform: scale(-1);
+  }
+
+  #project {
+    margin-top: 3rem;
+    padding: 0rem 1.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .project-name h2,
+  .brands h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #495057;
+  }
+
+  .brands a {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    transition: all 0.2s ease;
+  }
+
+  .brandsTable {
+    padding: 1.5rem;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  .brandsTable table {
+    table-layout: inherit;
+  }
+
+  .brandsTable table tr th,
+  .brandsTable table tr td {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .brandtip {
+    left: calc(100% + 2rem);
+  }
+
+  .brandtip::after {
+    left: -1rem;
+    transform: scale(-1);
+  }
+
+  .brandtip {
+    width: 14rem;
+    height: 6rem;
+    right: calc(100% + 2rem);
+    top: -1.8rem;
+    display: none;
+  }
+
+  .brandtip img {
+    width: 10rem;
+  }
+
+  .postbackstable {
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  .postbackstable table tr th,
+  .postbackstable table tr td {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .projecttable {
+    padding: 2rem 1.5rem 3rem 1.5rem;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  #marketsta h2 {
+    font-size: 2rem;
+    font-weight: 600 !important;
+    color: #495057;
+    margin-top: 3rem;
+  }
+
+  .projecttable table {
+    table-layout: inherit;
+  }
+
+  .projecttable table tr th,
+  .projecttable table tr td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .projecttable table tr td ul {
+    margin-left: 0;
   }
 }

@@ -47,3 +47,13 @@ dropdowntable.forEach((button) => {
     });
   });
 });
+
+// code for making browser full screen
+const fullScreenBtn = document.querySelector(".fullscreen button");
+fullScreenBtn.addEventListener("click", () => {
+  if (document.fullscreenElement) {
+    document.exitFullscreen();
+  } else {
+    document.documentElement.requestFullscreen();
+  }
+});

@@ -880,8 +880,396 @@ label {
   display: table-row;
 }
 
-/* -- barndsta area end -- */
+.markettable .nav-item img {
+  display: inline-block;
+  width: 2.5rem;
+  margin-right: 0.8rem;
+}
 
+.toltip {
+  position: relative;
+}
+
+.toltip #tooltiptext {
+  background-color: #4b5277;
+  border-radius: 0.5rem;
+  padding: 0.8rem 2rem;
+  color: #fff;
+  position: absolute;
+  font-size: 1.4rem;
+  left: -121%;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.toltip:hover #tooltiptext {
+  opacity: 1;
+  visibility: visible;
+}
+
+.toltip #tooltiptext:after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 2px;
+  border-top: 1rem solid transparent;
+  border-left: 1rem solid #4b5277;
+  border-bottom: 1rem solid transparent;
+  position: absolute;
+  right: -0.7rem;
+  top: 0.9rem;
+}
+
+/* -- barndsta area end -- */
 /* ==========================
     1.Dashboard end
+========================== */
+
+/* ==========================
+    2.brands start
+========================== */
+
+#project {
+  margin-top: 6rem;
+  padding: 0rem 4rem;
+}
+
+.project-name h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #495057;
+}
+
+.project-name p {
+  font-size: 1.7rem;
+  color: #75788d;
+  margin-top: 1.2rem;
+}
+
+.project-name p span {
+  display: inline-block;
+  font-weight: 600;
+  color: #fff;
+  background-color: #5c72e7;
+  border-radius: 36px;
+  padding: 0.5rem 1.5rem;
+  margin-right: 1rem;
+}
+
+.brands {
+  margin-top: 3rem;
+}
+
+.brands h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #495057;
+}
+
+.brands a {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #5c72e7;
+  border-radius: 0.4rem;
+  padding: 1rem 2rem;
+  transition: all 0.2s ease;
+}
+
+.brands a:hover {
+  opacity: 0.7;
+}
+
+.brandsTable {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 3rem;
+  margin-top: 2rem;
+}
+
+.brandsTable table {
+  width: 100%;
+  text-align: center;
+  table-layout: fixed;
+}
+
+.brandsTable table tr th {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+.brandsTable table tr td {
+  color: #75788d;
+  font-size: 1.7rem;
+  padding: 1.3rem 0rem;
+  border-bottom: 1px solid #c0cade;
+}
+
+.brandsTable table tr td strong {
+  font-weight: 600;
+}
+
+.brandsTable table tr td a.activelink {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #67d18c;
+  border-radius: 0.4rem;
+  padding: 0.6rem 2.5rem;
+  transition: all 0.2s ease;
+}
+
+.brandsTable table tr td a.deactive {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #f36a6a;
+  border-radius: 0.4rem;
+  padding: 0.6rem 1.6rem;
+  transition: all 0.2s ease;
+}
+
+.brandsTable table tr td a.activelink:hover {
+  opacity: 0.7;
+}
+
+.brandsTable table tr td ul li {
+  display: inline-block;
+}
+
+.brandsTable table tr td ul li a {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #5c72e7;
+  border-radius: 0.4rem;
+  border: 1px solid #5c72e7;
+  padding: 0.6rem 1.5rem;
+}
+
+.brandsTable table tr td ul li:first-child a {
+  padding: 0.6rem 2.5rem;
+  transition: all 0.2s ease;
+}
+
+.brandsTable table tr td ul li:first-child a:hover {
+  background-color: #5c72e7;
+  color: #fff;
+}
+
+.brandsTable table tr td ul li:last-child a {
+  margin-left: 1rem;
+  color: #f36a6a;
+  border-color: #f36a6a;
+  transition: all 0.2s ease;
+}
+
+.brandsTable table tr td ul li:last-child a:hover {
+  background-color: #f36a6a;
+  color: #fff;
+}
+
+.brandName {
+  position: relative;
+}
+
+.brandtip {
+  width: 20rem;
+  height: 8rem;
+  background-color: #4b5277;
+  border-radius: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: calc(100% + 2rem);
+  top: -2.6rem;
+  display: none;
+}
+
+.brandtip:after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 2px;
+  border-top: 2.8rem solid transparent;
+  border-left: 2.8rem solid #4b5277;
+  border-bottom: 2.8rem solid transparent;
+  position: absolute;
+  right: -1rem;
+}
+
+.brandtip img {
+  display: block;
+  width: 14rem;
+}
+
+.brandName:hover .brandtip {
+  display: flex;
+}
+
+.brandsTable table tr:last-child td {
+  border-bottom: 0;
+  padding-bottom: 0rem;
+}
+
+/* ==========================
+    2.brands end
+========================== */
+
+/* ==========================
+    3.postbacks start
+========================== */
+
+.postbackstable table {
+  width: 100%;
+}
+
+.postbackstable table tr {
+  vertical-align: top;
+}
+
+.postbackstable table tr th {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #495057;
+  padding-bottom: 1.5rem;
+}
+
+.postbackstable table tr td {
+  font-size: 1.7rem;
+  color: #495057;
+  padding: 1.1rem 0px;
+  border-bottom: 1px solid #c0cade;
+}
+
+.postbackstable table tr td span {
+  display: block;
+}
+
+.postbackstable {
+  margin-top: 4rem;
+}
+
+/* ==========================
+    3.postbacks end
+========================== */
+
+/* ==========================
+    4.project start
+========================== */
+.projectheading h2 {
+  font-size: 3rem;
+  font-weight: 800 !important;
+  color: #495057;
+  margin-top: 7rem;
+  margin-bottom: 4rem !important;
+}
+
+.projecttable {
+  padding: 2rem 3rem 5rem 3rem;
+  margin-top: -3px;
+  background: #fff;
+  position: relative;
+}
+
+.projecttable table {
+  width: 100%;
+  text-align: center;
+  table-layout: fixed;
+}
+
+.projecttable table tr th {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+.projecttable table tr td {
+  font-size: 1.7rem;
+  color: #75788d;
+  padding: 1.3rem 0rem;
+  border-bottom: 1px solid #c0cade;
+}
+
+.projecttable table tr td p span {
+  display: inline-block;
+  font-weight: 600;
+  color: #fff;
+  background-color: #5c72e7;
+  border-radius: 36px;
+  padding: 0.5rem 1.5rem;
+}
+
+.projecttable table tr td a.onlink {
+  display: inline-block;
+  width: 6rem;
+  border-radius: 0.4rem;
+  background-color: #67d18c;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 0.7rem 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.projecttable table tr td a.onlink:hover {
+  opacity: 0.7;
+}
+
+.projecttable table tr td a.offlink {
+  background-color: #f36a6a;
+}
+
+.projecttable table tr td a.activelilnk {
+  display: inline-block;
+  width: 9.6rem;
+  border-radius: 0.4rem;
+  background-color: #67d18c;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 0.7rem 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.projecttable table tr td a.deactivelink {
+  background-color: #f36a6a;
+}
+
+.projecttable table tr td ul {
+  display: flex;
+  gap: 2rem;
+  margin-left: -3rem;
+}
+
+.projecttable table tr td ul li a {
+  display: inline-block;
+  width: 12.2rem;
+  border-radius: 0.4rem;
+  border: 1px solid #5c72e7;
+  font-size: 1.6rem;
+  padding: 0.7rem 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.projecttable table tr td ul li:first-child a:hover {
+  background-color: #5c72e7;
+  color: #fff;
+}
+
+.projecttable table tr td ul li:last-child a {
+  color: #f36a6a;
+  border-color: #f36a6a;
+}
+
+.projecttable table tr td ul li:last-child a:hover {
+  background-color: #f36a6a;
+  color: #fff;
+}
+
+/* ==========================
+    4.project end
 ========================== */
