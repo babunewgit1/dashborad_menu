@@ -47,8 +47,13 @@
                 <img class="d-none" id="smlogo" src="img/smlogo.png" alt="" />
               </a>
             </div>
-            <div class="collapse-bar">
+            <div class="collapse-bar d-none d-lg-block">
               <button id="tigger"><img src="img/logobar.png" alt="" /></button>
+            </div>
+            <div class="close d-block d-lg-none">
+              <span id="closeIcon">
+                <i class="fa-regular fa-circle-xmark"></i>
+              </span>
             </div>
           </div>
 
@@ -75,7 +80,7 @@
               <li>
                 <a href="#"
                   ><span><i class="fa-solid fa-chart-simple"></i></span
-                  ><label id="items">Statistics</l></a
+                  ><label id="items">Statistics</label></a
                 >
               </li>
               <li>
@@ -87,7 +92,7 @@
               <li>
                 <a href="#"
                   ><span><i class="fa-solid fa-signs-post"></i></span
-                  ><label id="items">Post-backs</l></a
+                  ><label id="items">Post-backs</label></a
                 >
               </li>
               <li>
@@ -108,12 +113,22 @@
             class="right_header d-flex justify-content-between align-items-center"
           >
             <div class="tiggerSearch d-flex">
+              <div class="mobile_logo d-block d-lg-none">
+                <a href="index.html">
+                  <img src="img/smlogo.png" alt="" />
+                </a>
+              </div>
+              <div class="collapse-bar mbar d-block d-lg-none">
+                <button id="menuTigger">
+                  <img src="img/logobar.png" alt="" />
+                </button>
+              </div>
               <div class="collapse-bar sbar">
                 <button>
                   <img src="img/logobar.png" alt="" />
                 </button>
               </div>
-              <div class="rightpart_search">
+              <div class="rightpart_search d-none d-lg-block">
                 <input type="text" placeholder="Search" />
               </div>
             </div>
@@ -152,7 +167,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="option">
+              <div class="option d-none d-lg-block">
                 <div class="dropdown">
                   <button
                     class="dropdown-toggle"
@@ -204,7 +219,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="fullscreen">
+              <div class="fullscreen d-none d-lg-block">
                 <button><img src="img/full.png" alt="" /></button>
               </div>
               <div class="notification">
@@ -382,8 +397,9 @@
                   >
                     <div class="profileIcon d-flex align-items-center">
                       <img src="img/avatar-4.jpg" alt="" />
-                      <span
-                        >Marcus <i class="fa-solid fa-chevron-down"></i
+                      <span>
+                        <span class="d-none d-lg-inline-block">Marcus</span>
+                        <i class="fa-solid fa-chevron-down"></i
                       ></span>
                     </div>
                   </button>
@@ -424,6 +440,1078 @@
             </div>
           </div>
           <!-- right-header area end -->
+
+          <!-- report area start -->
+          <section id="report">
+            <div
+              class="report-heading d-flex align-items-center justify-content-between"
+            >
+              <h2>25.08.2023</h2>
+              <a href="#">View full report ></a>
+            </div>
+            <div class="reportbox">
+              <div class="reportone">
+                <div
+                  class="reportone-top d-flex align-items-center justify-content-between"
+                >
+                  <div class="reportOne-click">
+                    <h4>$34,152</h4>
+                    <p>Total Revenue</p>
+                  </div>
+                  <div class="reportone-chart">
+                    <div id="chart"></div>
+                  </div>
+                </div>
+                <div class="reportonebottom">
+                  <p>
+                    <span><i class="fa-solid fa-up-long"></i> 2.65%</span> since
+                    last week
+                  </p>
+                </div>
+              </div>
+              <div class="reportone">
+                <div
+                  class="reportone-top d-flex align-items-center justify-content-between"
+                >
+                  <div class="reportOne-click">
+                    <h4>5,643</h4>
+                    <p>Orders</p>
+                  </div>
+                  <div class="reportone-chart">
+                    <div class="rating-container">
+                      <div class="walk-container">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="-1 -1 34 34"
+                        >
+                          <circle
+                            cx="16"
+                            cy="16"
+                            r="14.9155"
+                            class="rating-progress-background"
+                          />
+                          <circle
+                            cx="16"
+                            cy="16"
+                            r="14.9155"
+                            class="rating-progress js-rating-progress"
+                          />
+                        </svg>
+                        <div id="walk-score"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reportonebottom">
+                  <p>
+                    <span class="text-danger"
+                      ><i class="fa-solid fa-down-long"></i> 0.82%</span
+                    >
+                    since last week
+                  </p>
+                </div>
+              </div>
+              <div class="reportone">
+                <div
+                  class="reportone-top d-flex align-items-center justify-content-between"
+                >
+                  <div class="reportOne-click">
+                    <h4>45,254</h4>
+                    <p>Customers</p>
+                  </div>
+                  <div class="reportone-chart">
+                    <div class="rating-container">
+                      <div class="walk-container">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="-1 -1 34 34"
+                        >
+                          <circle
+                            cx="16"
+                            cy="16"
+                            r="14.9155"
+                            class="rating-progress-background"
+                          />
+                          <circle
+                            cx="16"
+                            cy="16"
+                            r="14.9155"
+                            class="rating-progress js-rating-progress-two"
+                          />
+                        </svg>
+                        <div id="walk-score"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reportonebottom">
+                  <p>
+                    <span class="text-danger"
+                      ><i class="fa-solid fa-down-long"></i> 6.24%</span
+                    >
+                    since last week
+                  </p>
+                </div>
+              </div>
+              <div class="reportone">
+                <div
+                  class="reportone-top d-flex align-items-center justify-content-between"
+                >
+                  <div class="reportOne-click">
+                    <h4>+ 12.58%</h4>
+                    <p>Growth</p>
+                  </div>
+                  <div class="reportone-chart">
+                    <div id="chart2"></div>
+                  </div>
+                </div>
+                <div class="reportonebottom">
+                  <p>
+                    <span><i class="fa-solid fa-up-long"></i> 10.51%</span>
+                    since last week
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- report area end -->
+
+          <!-- marketsta area start -->
+          <section id="marketsta">
+            <h2>Market Statistics</h2>
+            <div class="markettable">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#home-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="home-tab-pane"
+                    aria-selected="true"
+                  >
+                    All <span>123</span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#profile-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile-tab-pane"
+                    aria-selected="false"
+                  >
+                    <small>AU</small>AUS <span>46</span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="contact-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#contact-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="contact-tab-pane"
+                    aria-selected="false"
+                  >
+                    <small>FI</small>FI <span>30</span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="contact-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#fi"
+                    type="button"
+                    role="tab"
+                    aria-controls="fi"
+                    aria-selected="false"
+                  >
+                    <small>CA</small>CA <span>30</span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="contact-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#two"
+                    type="button"
+                    role="tab"
+                    aria-controls="two"
+                    aria-selected="false"
+                  >
+                    <small>BR</small>BR <span>30</span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="contact-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#three"
+                    type="button"
+                    role="tab"
+                    aria-controls="three"
+                    aria-selected="false"
+                  >
+                    <small>AT</small>AT <span>30</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="home-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                  tabindex="0"
+                >
+                  <div class="tableContentAll">
+                    <table>
+                      <tr>
+                        <th><p class="text-start">Website</p></th>
+                        <th>Team</th>
+                        <th>Clicks</th>
+                        <th>Cloak true/false</th>
+                        <th>Brand clicks</th>
+                        <th>Clickout rate</th>
+                        <th>Registers</th>
+                        <th>FTDs</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Total</td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="profile-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                  tabindex="0"
+                >
+                  <div class="tableContentAll">
+                    <table>
+                      <tr>
+                        <th><p class="text-start">Website</p></th>
+                        <th>Team</th>
+                        <th>Clicks</th>
+                        <th>Cloak true/false</th>
+                        <th>Brand clicks</th>
+                        <th>Clickout rate</th>
+                        <th>Registers</th>
+                        <th>FTDs</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Total</td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="contact-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="contact-tab"
+                  tabindex="0"
+                >
+                  <div class="tableContentAll">
+                    <table>
+                      <tr>
+                        <th><p class="text-start">Website</p></th>
+                        <th>Team</th>
+                        <th>Clicks</th>
+                        <th>Cloak true/false</th>
+                        <th>Brand clicks</th>
+                        <th>Clickout rate</th>
+                        <th>Registers</th>
+                        <th>FTDs</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Total</td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="fi"
+                  role="tabpanel"
+                  aria-labelledby="contact-tab"
+                  tabindex="0"
+                >
+                  <div class="tableContentAll">
+                    <table>
+                      <tr>
+                        <th><p class="text-start">Website</p></th>
+                        <th>Team</th>
+                        <th>Clicks</th>
+                        <th>Cloak true/false</th>
+                        <th>Brand clicks</th>
+                        <th>Clickout rate</th>
+                        <th>Registers</th>
+                        <th>FTDs</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Total</td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="two"
+                  role="tabpanel"
+                  aria-labelledby="two"
+                  tabindex="0"
+                >
+                  <div class="tableContentAll">
+                    <table>
+                      <tr>
+                        <th><p class="text-start">Website</p></th>
+                        <th>Team</th>
+                        <th>Clicks</th>
+                        <th>Cloak true/false</th>
+                        <th>Brand clicks</th>
+                        <th>Clickout rate</th>
+                        <th>Registers</th>
+                        <th>FTDs</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Total</td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="three"
+                  role="tabpanel"
+                  aria-labelledby="three"
+                  tabindex="0"
+                >
+                  <div class="tableContentAll">
+                    <table>
+                      <tr>
+                        <th><p class="text-start">Website</p></th>
+                        <th>Team</th>
+                        <th>Clicks</th>
+                        <th>Cloak true/false</th>
+                        <th>Brand clicks</th>
+                        <th>Clickout rate</th>
+                        <th>Registers</th>
+                        <th>FTDs</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="text-start"><span id="con">AUS 1</span></p>
+                        </td>
+                        <td><span class="to" id="con">T0</span></td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Total</td>
+                        <td>983</td>
+                        <td>900/<span class="text-danger">83</span></td>
+                        <td>300/250</td>
+                        <td>20%</td>
+                        <td>120</td>
+                        <td><strong>16</strong></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- marketsta area end -->
+
+          <!-- barndsta area start -->
+          <section id="barndsta">
+            <h2>Brand Statistics</h2>
+            <div class="brandtable">
+              <table>
+                <tr>
+                  <th><p class="text-start">Brand name</p></th>
+                  <th>Clicks</th>
+                  <th>Registers</th>
+                  <th>FTDs</th>
+                  <th>Click2FTD</th>
+                  <th>Clickout rate</th>
+                  <th>Reg2FTD</th>
+                </tr>
+                <tr>
+                  <td><p class="text-start">BrandName</p></td>
+                  <td>983</td>
+                  <td>983</td>
+                  <td><strong>13</strong></td>
+                  <td>15%</td>
+                  <td>20%</td>
+                  <td data-target="nextOne" id="dropdowntable">
+                    120 <span><i class="fa-solid fa-chevron-down"></i></span>
+                  </td>
+                </tr>
+                <tr data-accept="nextOne" class="droptable">
+                  <td>
+                    <p class="text-start"><span>AUS 1</span></p>
+                  </td>
+                  <td>983</td>
+                  <td>983</td>
+                  <td><strong>13</strong></td>
+                  <td>15%</td>
+                  <td>20%</td>
+                  <td>52</td>
+                </tr>
+                <tr data-accept="nextOne" class="droptable">
+                  <td>
+                    <p class="text-start"><span>AUS 2</span></p>
+                  </td>
+                  <td>983</td>
+                  <td>983</td>
+                  <td><strong>13</strong></td>
+                  <td>15%</td>
+                  <td>20%</td>
+                  <td>52</td>
+                </tr>
+                <tr>
+                  <td><p class="text-start">BrandName</p></td>
+                  <td>983</td>
+                  <td>983</td>
+                  <td><strong>13</strong></td>
+                  <td>15%</td>
+                  <td>20%</td>
+                  <td data-target="nextTwo" id="dropdowntable">
+                    120 <span><i class="fa-solid fa-chevron-down"></i></span>
+                  </td>
+                </tr>
+                <tr data-accept="nextTwo" class="droptable">
+                  <td>
+                    <p class="text-start"><span>AUS 1</span></p>
+                  </td>
+                  <td>983</td>
+                  <td>983</td>
+                  <td><strong>13</strong></td>
+                  <td>15%</td>
+                  <td>20%</td>
+                  <td>52</td>
+                </tr>
+                <tr data-accept="nextTwo" class="droptable">
+                  <td>
+                    <p class="text-start"><span>AUS 2</span></p>
+                  </td>
+                  <td>983</td>
+                  <td>983</td>
+                  <td><strong>13</strong></td>
+                  <td>15%</td>
+                  <td>20%</td>
+                  <td>52</td>
+                </tr>
+                <tr>
+                  <td><p class="text-start">BrandName</p></td>
+                  <td>983</td>
+                  <td>983</td>
+                  <td><strong>13</strong></td>
+                  <td>15%</td>
+                  <td>20%</td>
+                  <td data-target="nextThree" id="dropdowntable">
+                    120 <span><i class="fa-solid fa-chevron-down"></i></span>
+                  </td>
+                </tr>
+                <tr data-accept="nextThree" class="droptable">
+                  <td>
+                    <p class="text-start"><span>AUS 1</span></p>
+                  </td>
+                  <td>983</td>
+                  <td>983</td>
+                  <td><strong>13</strong></td>
+                  <td>15%</td>
+                  <td>20%</td>
+                  <td>52</td>
+                </tr>
+                <tr data-accept="nextThree" class="droptable">
+                  <td>
+                    <p class="text-start"><span>AUS 2</span></p>
+                  </td>
+                  <td>983</td>
+                  <td>983</td>
+                  <td><strong>13</strong></td>
+                  <td>15%</td>
+                  <td>20%</td>
+                  <td>52</td>
+                </tr>
+                <tr>
+                  <td><p class="text-start">BrandName</p></td>
+                  <td>983</td>
+                  <td>983</td>
+                  <td><strong>13</strong></td>
+                  <td>15%</td>
+                  <td>20%</td>
+                  <td data-target="nextFour" id="dropdowntable">
+                    120 <span><i class="fa-solid fa-chevron-down"></i></span>
+                  </td>
+                </tr>
+                <tr data-accept="nextFour" class="droptable">
+                  <td>
+                    <p class="text-start"><span>AUS 1</span></p>
+                  </td>
+                  <td>983</td>
+                  <td>983</td>
+                  <td><strong>13</strong></td>
+                  <td>15%</td>
+                  <td>20%</td>
+                  <td>52</td>
+                </tr>
+                <tr data-accept="nextFour" class="droptable">
+                  <td>
+                    <p class="text-start"><span>AUS 2</span></p>
+                  </td>
+                  <td>983</td>
+                  <td>983</td>
+                  <td><strong>13</strong></td>
+                  <td>15%</td>
+                  <td>20%</td>
+                  <td>52</td>
+                </tr>
+                <tr>
+                  <td><p class="text-start">BrandName</p></td>
+                  <td>983</td>
+                  <td>983</td>
+                  <td><strong>13</strong></td>
+                  <td>15%</td>
+                  <td>20%</td>
+                  <td data-target="nextFive" id="dropdowntable">
+                    120 <span><i class="fa-solid fa-chevron-down"></i></span>
+                  </td>
+                </tr>
+                <tr data-accept="nextFive" class="droptable">
+                  <td>
+                    <p class="text-start"><span>AUS 1</span></p>
+                  </td>
+                  <td>983</td>
+                  <td>983</td>
+                  <td><strong>13</strong></td>
+                  <td>15%</td>
+                  <td>20%</td>
+                  <td>52</td>
+                </tr>
+                <tr data-accept="nextFive" class="droptable">
+                  <td>
+                    <p class="text-start"><span>AUS 2</span></p>
+                  </td>
+                  <td>983</td>
+                  <td>983</td>
+                  <td><strong>13</strong></td>
+                  <td>15%</td>
+                  <td>20%</td>
+                  <td>52</td>
+                </tr>
+                <tr>
+                  <td><p class="text-start">BrandName</p></td>
+                  <td>983</td>
+                  <td>983</td>
+                  <td><strong>13</strong></td>
+                  <td>15%</td>
+                  <td>20%</td>
+                  <td data-target="nextSix" id="dropdowntable">
+                    120 <span><i class="fa-solid fa-chevron-down"></i></span>
+                  </td>
+                </tr>
+                <tr data-accept="nextSix" class="droptable">
+                  <td>
+                    <p class="text-start"><span>AUS 1</span></p>
+                  </td>
+                  <td>983</td>
+                  <td>983</td>
+                  <td><strong>13</strong></td>
+                  <td>15%</td>
+                  <td>20%</td>
+                  <td>52</td>
+                </tr>
+                <tr data-accept="nextSix" class="droptable">
+                  <td>
+                    <p class="text-start"><span>AUS 2</span></p>
+                  </td>
+                  <td>983</td>
+                  <td>983</td>
+                  <td><strong>13</strong></td>
+                  <td>15%</td>
+                  <td>20%</td>
+                  <td>52</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+          <!-- barndsta area end -->
         </div>
         <!-- right part area end -->
       </div>
@@ -438,7 +1526,10 @@
     <!-- Fontawesome Script -->
     <script src="https://kit.fontawesome.com/e7f2043049.js"></script>
 
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
     <!-- Custom jQuery -->
+    <script src="js/chart.js"></script>
     <script src="js/app.js"></script>
     <script src="js/scripts.js"></script>
   </body>

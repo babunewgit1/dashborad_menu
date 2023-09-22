@@ -3,38 +3,30 @@
 Medium Screen - Others
 ====================================
 */
+@media screen and (min-width: 1201px) and (max-width: 1350px) {
+  html {
+    font-size: 45%;
+  }
+
+  .reportbox {
+    gap: 1rem;
+  }
+}
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+  html {
+    font-size: 45%;
+  }
 
+  .leftpart {
+    width: 36rem;
+    background-color: #fff;
+    min-height: 100vh;
+    padding: 4.8rem 3rem 4.5rem 2.5rem;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .reportbox {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /*
@@ -43,36 +35,68 @@ Small Screen - Tablate
 ====================================
 */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 60%;
+  }
 
+  .leftpart {
+    width: 32rem;
+    position: fixed;
+    z-index: 999;
+    left: -100%;
+    padding: 3.2rem 2.2rem;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+  }
 
+  .mobile_logo img {
+    display: block;
+    width: 3.5rem;
+  }
 
+  .right_header {
+    padding: 1.4rem 1.5rem;
+  }
 
+  .mbar button {
+    top: 0.8rem !important;
+    margin-left: 2rem;
+  }
 
+  .rightpart_others {
+    gap: 1rem;
+  }
 
+  .profile {
+    margin-left: 1rem;
+  }
 
+  .notificationdrp {
+    width: 30rem;
+  }
 
+  .openmenu {
+    left: 0%;
+  }
 
+  .reportbox {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .markettable .nav-link {
+    padding: 1.5rem 1rem;
+  }
 
+  .tableContentAll table tr th,
+  .tableContentAll table tr td {
+    font-size: 1.4rem;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .brandtable table tr th,
+  .brandtable table tr td {
+    font-size: 1.4rem;
+  }
 }
 
 /*
@@ -80,34 +104,113 @@ Small Screen - Tablate
 Small Screen - Mobile
 ====================================
 */
-@media screen and (min-width: 576px) and (max-width: 767px) {	
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 60%;
+  }
 
+  .leftpart {
+    width: 32rem;
+    position: fixed;
+    z-index: 999;
+    left: -100%;
+    padding: 3.2rem 2.2rem;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+  }
 
+  .mobile_logo img {
+    display: block;
+    width: 3.5rem;
+  }
 
+  .right_header {
+    padding: 1.4rem 1.5rem;
+  }
 
+  .mbar button {
+    top: 0.8rem !important;
+    margin-left: 2rem;
+  }
 
+  .rightpart_others {
+    gap: 1rem;
+  }
 
+  .profile {
+    margin-left: 1rem;
+  }
 
+  .notificationdrp {
+    width: 30rem;
+  }
 
+  .openmenu {
+    left: 0%;
+  }
 
+  .report-heading h2 {
+    font-size: 2rem;
+  }
 
+  .report-heading a {
+    font-size: 1.4rem;
+  }
 
+  .reportone {
+    margin-top: 2rem;
+  }
 
+  .reportbox {
+    display: block;
+  }
 
+  #marketsta {
+    padding: 0rem 1.5rem;
+  }
 
+  .nav-tabs {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
 
+  .markettable .nav-link {
+    white-space: nowrap;
+  }
 
+  .tableContentAll,
+  .brandtable {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
 
+  .tableContentAll table tr td span#con {
+    margin-right: 25px;
+  }
 
+  #barndsta {
+    margin-top: 4rem;
+    padding: 0rem 1.5rem;
+    padding-bottom: 3rem;
+  }
 
+  .brandtable table tr td,
+  .brandtable table tr th {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 
+  .brandtable table tr td span {
+    left: 1rem;
+  }
 
-
-
-
-
-
-
+  #report {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 /*
@@ -116,34 +219,110 @@ Xtra Small Screen - Small Mobile
 ====================================
 */
 @media screen and (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
 
+  .leftpart {
+    width: 32rem;
+    position: fixed;
+    z-index: 999;
+    left: -100%;
+    padding: 3.2rem 2.2rem;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+  }
 
+  .mobile_logo img {
+    display: block;
+    width: 3.5rem;
+  }
 
+  .right_header {
+    padding: 1.4rem 1.5rem;
+  }
 
+  .mbar button {
+    top: 0.8rem !important;
+    margin-left: 2rem;
+  }
 
+  .rightpart_others {
+    gap: 1rem;
+  }
 
+  .profile {
+    margin-left: 1rem;
+  }
 
+  .notificationdrp {
+    width: 30rem;
+  }
 
+  .openmenu {
+    left: 0%;
+  }
 
+  #report {
+    margin-top: 2rem;
+    padding: 0rem 1.5rem;
+  }
 
+  .report-heading h2 {
+    font-size: 2rem;
+  }
 
+  .report-heading a {
+    font-size: 1.4rem;
+  }
 
+  .reportone {
+    margin-top: 2rem;
+  }
 
+  .reportbox {
+    display: block;
+  }
 
+  #marketsta {
+    padding: 0rem 1.5rem;
+  }
 
+  .nav-tabs {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
 
+  .markettable .nav-link {
+    white-space: nowrap;
+  }
 
+  .tableContentAll,
+  .brandtable {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
 
+  .tableContentAll table tr td span#con {
+    margin-right: 25px;
+  }
 
+  #barndsta {
+    margin-top: 4rem;
+    padding: 0rem 1.5rem;
+    padding-bottom: 3rem;
+  }
 
+  .brandtable table tr td,
+  .brandtable table tr th {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 
-
-
-
-
-
-
-
-
-
+  .brandtable table tr td span {
+    left: 1rem;
+  }
 }
