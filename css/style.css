@@ -1822,3 +1822,20 @@ label {
 /* ==========================
     9.new_payment end
 ========================== */
+
+/* ==========================
+    10.logs start
+========================== */
+
+.logtable table tr td strong {
+  font-weight: 600;
+  color: #34c38f;
+}
+
+.logtable table tr:last-child td {
+  border-bottom: 0;
+}
+
+/* ==========================
+    10.logs end
+========================== */
