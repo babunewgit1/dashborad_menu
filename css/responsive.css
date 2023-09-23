@@ -19,6 +19,14 @@ Medium Screen - Others
   .projecttable table tr td ul {
     margin-left: -6rem;
   }
+
+  .startinput input {
+    width: 28rem;
+  }
+
+  .chart-right {
+    padding-bottom: 16.2rem;
+  }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   html {
@@ -85,6 +93,29 @@ Medium Screen - Others
   .projecttable table tr td ul {
     margin-left: 0;
   }
+
+  .startinput input {
+    width: 22rem;
+  }
+
+  .stablink ul li a {
+    display: inline-block;
+    width: 14rem;
+  }
+
+  .chart-right {
+    padding-bottom: 8rem;
+  }
+
+  .addbrandinput {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+
+  .payment-select {
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 3rem;
+  }
 }
 
 /*
@@ -143,7 +174,7 @@ Small Screen - Tablate
   }
 
   .markettable .nav-link {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0.5rem;
   }
 
   .tableContentAll table tr th,
@@ -262,6 +293,35 @@ Small Screen - Tablate
 
   .projecttable table tr td ul {
     margin-left: 0;
+  }
+
+  .stablink {
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+
+  .chart-right {
+    margin-left: 0;
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .addbrandinput {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+  }
+
+  .multi {
+    column-gap: 2rem;
+  }
+
+  .payment-select {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .paymentmethod {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -485,6 +545,80 @@ Small Screen - Mobile
   .projecttable table tr td ul {
     margin-left: 0;
   }
+
+  .stablockdate,
+  .sta-chart-heading {
+    display: block !important;
+  }
+
+  .startinput input {
+    width: 100%;
+  }
+
+  .stablink {
+    padding-left: 0rem;
+    margin-top: 1.5rem;
+  }
+
+  .stablink ul li a {
+    display: inline-block;
+    width: 9.5rem;
+  }
+
+  .sta-chart-select {
+    margin-top: 1.5rem;
+  }
+
+  .sta-chart-ftd {
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .sta-chart-one p {
+    display: block;
+  }
+
+  .chart-right {
+    margin-top: 2rem;
+    margin-left: 0rem;
+    padding-bottom: 3rem;
+  }
+
+  .addbrands {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .addbrandinput {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0rem;
+  }
+  .addbrandinputbox {
+    padding-bottom: 2rem;
+  }
+
+  .multi {
+    display: block !important;
+  }
+
+  .payment-select {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+
+  .paymentbtn {
+    margin-top: 3rem;
+  }
+
+  .paymentbtn a.plinkTwo {
+    padding: 0.8rem 5rem;
+  }
+
+  .paymentmethod {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /*
@@ -613,7 +747,7 @@ Xtra Small Screen - Small Mobile
   #project {
     margin-top: 3rem;
     padding: 0rem 1.5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
   }
 
   .project-name h2,
@@ -706,5 +840,79 @@ Xtra Small Screen - Small Mobile
 
   .projecttable table tr td ul {
     margin-left: 0;
+  }
+
+  .stablockdate,
+  .sta-chart-heading {
+    display: block !important;
+  }
+
+  .startinput input {
+    width: 100%;
+  }
+
+  .stablink {
+    padding-left: 0rem;
+    margin-top: 1.5rem;
+  }
+
+  .stablink ul li a {
+    display: inline-block;
+    width: 9.5rem;
+  }
+
+  .sta-chart-select {
+    margin-top: 1.5rem;
+  }
+
+  .sta-chart-ftd {
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .sta-chart-one p {
+    display: block;
+  }
+
+  .chart-right {
+    margin-top: 2rem;
+    margin-left: 0rem;
+    padding-bottom: 3rem;
+  }
+
+  .addbrands {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .addbrandinput {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0rem;
+  }
+  .addbrandinputbox {
+    padding-bottom: 2rem;
+  }
+
+  .multi {
+    display: block !important;
+  }
+
+  .payment-select {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+
+  .paymentbtn {
+    margin-top: 3rem;
+  }
+
+  .paymentbtn a.plinkTwo {
+    padding: 0.8rem 5rem;
+  }
+
+  .paymentmethod {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }

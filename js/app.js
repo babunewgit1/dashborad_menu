@@ -57,3 +57,20 @@ fullScreenBtn.addEventListener("click", () => {
     document.documentElement.requestFullscreen();
   }
 });
+
+// code for custom file upload
+const fileInput = document.getElementById("fileInput");
+const fileInputLabel = document.getElementById("fileInputLabel");
+const logFileNameButton = document.getElementById("logFileNameButton");
+
+logFileNameButton.addEventListener("click", function () {
+  fileInput.click();
+});
+
+fileInput.addEventListener("change", function () {
+  const selectedFiles = fileInput.files;
+  if (selectedFiles.length > 0) {
+    const fileName = selectedFiles[0].name;
+    fileInputLabel.textContent = fileName;
+  }
+});

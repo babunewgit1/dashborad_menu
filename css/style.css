@@ -1273,3 +1273,552 @@ label {
 /* ==========================
     4.project end
 ========================== */
+
+/* ==========================
+    5.statostocs start
+========================== */
+.staticheading h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #495057;
+}
+
+.stablock {
+  background-color: #fff;
+  padding: 2.2rem;
+  box-shadow: 0 2px 4px rgba(15, 34, 58, 0.12);
+  border-radius: 0.4rem;
+  margin-top: 2rem;
+}
+
+.stablockleft p {
+  font-size: 1.7rem;
+  color: #75788d;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.startinput input {
+  border-radius: 0.4rem;
+  border: 1px solid rgba(117, 120, 141, 0.32);
+  padding: 0.5rem 1.2rem;
+  width: 32rem;
+  display: block;
+  outline: none;
+  color: #75788d;
+  font-size: 1.6rem;
+}
+
+.startinput input::placeholder {
+  opacity: 1;
+  color: #75788d;
+}
+
+.stablink ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stablink ul li a {
+  display: inline-block;
+  width: 18rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #5aca9e;
+  border-radius: 0.4rem;
+  padding: 0.7rem 0.5rem;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+}
+
+.stablink ul li a:hover {
+  opacity: 0.7;
+}
+
+.stablink {
+  padding-left: 2rem;
+}
+
+.stablink ul li:nth-child(2) a {
+  background-color: #5c72e7;
+}
+
+.stablink ul li:last-child a {
+  background-color: #5c72e7;
+}
+
+.static-box .reportone {
+  margin-top: 4.8rem;
+}
+
+.sta-chart-left {
+  background-color: #fff;
+  padding: 2.2rem;
+  box-shadow: 0 2px 4px rgba(15, 34, 58, 0.12);
+  border-radius: 0.4rem;
+}
+
+.sta-chart {
+  margin-top: 5rem;
+}
+
+.sta-chart-para p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+.sta-chart-select p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+.sta-chart-select select {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+
+.sta-chart-ftd {
+  gap: 6rem;
+  margin-top: 3rem;
+  margin-left: 5rem;
+}
+
+.sta-chart-one p {
+  font-size: 1.4rem;
+  color: #75788d;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.sta-chart-one p span {
+  color: #495057;
+  font-size: 2.2rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 0.8rem;
+}
+
+.sta-chart-two p span {
+  color: #7488ec;
+}
+
+.sta-chartimg {
+  margin-top: 4rem;
+}
+
+.sta-chartimg img {
+  display: block;
+  width: 100%;
+}
+
+.chart-right {
+  background-color: #fff;
+  padding: 2.2rem;
+  box-shadow: 0 2px 4px rgba(15, 34, 58, 0.12);
+  border-radius: 0.4rem;
+  padding-bottom: 22.2rem;
+  margin-left: 1rem;
+}
+
+.chr-heading h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+.barsta-one-left p {
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #495057;
+}
+
+.barsta-one-left p span {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #5c72e7;
+}
+
+.barsta-one-left {
+  width: 13.5rem;
+}
+
+.barsta-one-right {
+  width: calc(100% - 13.5rem);
+}
+
+.barbar {
+  width: 100%;
+  background-color: #e4e6ea;
+  height: 1.2rem;
+  border-radius: 3.6rem;
+}
+
+.barbar span {
+  display: block;
+  width: 80%;
+  height: 100%;
+  background-color: #5c72e7;
+  border-radius: 3.6rem;
+}
+
+.barsta-one {
+  margin-top: 2rem;
+}
+
+.barsta-two span {
+  background-color: #51a5f1 !important;
+}
+
+.barsta-two .barbar span {
+  width: 60%;
+}
+
+.barsta-three span {
+  background-color: #35c28f !important;
+}
+
+.barsta-three .barbar span {
+  width: 50%;
+}
+
+.barsta-four span {
+  background-color: #f1b34d !important;
+}
+
+.barsta-four .barbar span {
+  width: 45%;
+}
+
+.barsta-five span {
+  background-color: #6f42c1 !important;
+}
+
+.barsta-five .barbar span {
+  width: 75%;
+}
+
+.barsta-five span {
+  background-color: #6f42c1 !important;
+}
+
+.barsta-five .barbar span {
+  width: 65%;
+}
+
+.barsta-six span {
+  background-color: #ff9831 !important;
+}
+
+.barsta-six .barbar span {
+  width: 78%;
+}
+
+.barsta-seven span {
+  background-color: #58d7e8 !important;
+}
+
+.barsta-seven .barbar span {
+  width: 78%;
+}
+
+.barsta-eight span {
+  background-color: #6f42c1 !important;
+}
+
+.barsta-eight .barbar span {
+  width: 78%;
+}
+
+/* ==========================
+    5.statostocs end
+========================== */
+
+/* ==========================
+    6.add brands start
+========================== */
+.addbrands {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.addbrandinput {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10rem;
+}
+
+.addbrandinput label {
+  display: block;
+  font-size: 1.7rem;
+  color: #75788d;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.addbrandinput input,
+.fileinput {
+  display: block;
+  width: 100%;
+  border-radius: 0.4rem;
+  border: 1px solid rgba(117, 120, 141, 0.32);
+  display: block;
+  outline: none;
+  color: #75788d;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+}
+
+.fileinput {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+}
+
+.addbrandinput input::placeholder {
+  opacity: 1;
+}
+
+.fileInputWrapper label {
+  color: #75788d;
+  font-size: 1.6rem;
+  font-weight: normal;
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fileInputWrapper button {
+  display: block;
+  font-size: 1.5rem;
+  background-color: #34c38f;
+  border-radius: 0.4rem;
+  border: 0;
+  outline: none;
+  width: 50%;
+  color: #fff;
+  padding: 1.1rem 0rem;
+}
+
+.addbrandinputbox {
+  padding-bottom: 4rem;
+}
+
+.multi {
+  column-gap: 4rem;
+}
+
+.addbrandinput {
+  border-bottom: 1px solid #c0cade;
+}
+
+.ps-one .check-box {
+  display: block;
+  position: relative;
+  padding-left: 3.8rem;
+  /*! margin-bottom: 12px; */
+  cursor: pointer;
+  font-size: 1.6rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 600;
+  color: #75788d;
+}
+
+.ps-one .check-box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.ps-one .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: transparent;
+  border: 1px solid rgba(117, 120, 141, 0.32);
+  border-radius: 0.4rem;
+}
+
+.ps-one .check-box input:checked ~ .checkmark {
+  background-color: #5c72e7;
+  border: 0;
+}
+
+.ps-one .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.ps-one .check-box input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.ps-one .check-box .checkmark:after {
+  left: 1rem;
+  top: 0.6rem;
+  width: 0.5rem;
+  height: 1rem;
+  border: solid white;
+  border-width: 0 0.2rem 0.2rem 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.paymentoption h4 {
+  font-size: 1.7rem;
+  color: #75788d;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.payment-select {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  row-gap: 3rem;
+}
+
+.paymentbtn {
+  margin-top: 5rem;
+}
+
+.paymentbtn a.plinkOne {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #5c72e7;
+  transition: all 0.2s ease;
+}
+
+.paymentbtn a.plinkTwo {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #34c38f;
+  border-radius: 0.4rem;
+  padding: 1.3rem 16rem;
+  transition: all 0.2s ease;
+}
+
+.paymentbtn a:hover {
+  opacity: 0.7;
+}
+
+.paymentoption {
+  margin-top: 3rem;
+}
+
+/* ==========================
+    6.add brands end
+========================== */
+
+/* ==========================
+    7.edit brands start
+========================== */
+
+.brands img {
+  display: block;
+  width: 17.5rem;
+}
+
+/* ==========================
+    7.edit brands end
+========================== */
+
+/* ==========================
+    8.payment_option start
+========================== */
+
+.paymentmethod {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 2rem;
+}
+
+.paymentItem {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin-top: 3rem;
+}
+
+.paymentItem p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #495057;
+  border-bottom: 2px solid #d2d3d5;
+  padding: 0.6rem 0rem;
+}
+
+.payImg {
+  padding: 1.5rem 0rem;
+}
+
+.payImg img {
+  display: inline-block;
+  width: 14rem;
+}
+
+.paybutton {
+  border-top: 2px solid #d2d3d5;
+}
+
+.paybutton a {
+  display: inline-block;
+  width: 50%;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #5c72e7;
+  padding: 1rem 0rem;
+  transition: all 0.2s ease;
+}
+
+.paybutton a:hover {
+  opacity: 0.7;
+}
+
+.paybutton a:first-child {
+  border-right: 2px solid #d2d3d5;
+  color: #f36d6d;
+}
+
+/* ==========================
+    8.payment_option end
+========================== */
+
+/* ==========================
+    9.new_payment start
+========================== */
+
+.newpaymentOption .paymentbtn {
+  margin-top: 3rem;
+}
+
+/* ==========================
+    9.new_payment end
+========================== */
